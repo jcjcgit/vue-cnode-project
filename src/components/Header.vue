@@ -1,7 +1,7 @@
 <template>
   <div class="head">
     <div class="head-left icon-logo">
-      <router-link to="/">
+      <router-link :to="{name: 'home'}">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#iconcnodejs_light" />
         </svg>
@@ -19,12 +19,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped lagn="less">
 .head {
   height: 60px;
   background: #5a5555;
 }
-
 .head-left {
   float: left;
 }

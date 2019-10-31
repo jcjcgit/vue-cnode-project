@@ -24,4 +24,8 @@ export default {
   list-style: none;
   border: none;
 }
+
+body {
+  background-color: #ccc;
+}
 </style>

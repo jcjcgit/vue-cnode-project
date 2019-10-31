@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import list from '../components/list'
 import article from '../components/article'
 import sidebar from '../components/sidebar'
-import userInfo from '../components/userInfo'
+import userInfo from '../common/userInfo'
 
 
 
@@ -22,12 +22,19 @@ export default new Router({
     components: {
       main: article,
       sidebar: sidebar
+    },
+    props: {
+      main: true, //组件传值
+      sidebar: true,
     }
   }, {
     path: '/user/:name',
     name: 'userInfo',
     components: {
       main: userInfo
+    },
+    props: {
+      main: true
     }
   }]
 })
